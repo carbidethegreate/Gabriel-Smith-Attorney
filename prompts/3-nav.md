@@ -10,10 +10,10 @@ Modified: 2025-07-11
 Use this prompt with OpenAI Codex to generate a mobile-friendly navigation bar and the accompanying JavaScript toggle. Copy the block below (including numbered section comments) into your Codex call.
 
 Generate the updated header markup and a JS file as follows:
-
-/* 1. Header & Navigation HTML /
-/ — insert inside  just before  — */
-☰
+```html
+/* 1. Header & Navigation HTML */
+/* — insert inside <header> just before </header> — */
+<button class="menu-toggle">☰</button>
 
 <nav>
   <ul>
@@ -35,24 +35,25 @@ Generate the updated header markup and a JS file as follows:
 
 
 /* 2. JavaScript for menu toggle (save as js/menu.js) */
-document.addEventListener(‘DOMContentLoaded’, function() {
-const toggle = document.querySelector(’.menu-toggle’);
-const menu   = document.querySelector(‘header nav ul’);
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('header nav ul');
 
-toggle.addEventListener(‘click’, () => {
-menu.classList.toggle(‘open’);
-});
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
 
-// Optional: close menu when a link is clicked (mobile)
-menu.querySelectorAll(‘a’).forEach(link => {
-link.addEventListener(‘click’, () => {
-if (menu.classList.contains(‘open’)) {
-menu.classList.remove(‘open’);
-}
+  // Optional: close menu when a link is clicked (mobile)
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+      }
+    });
+  });
 });
-});
-});
+```
 
-This will add a hamburger button on small screens that toggles the navigation’s `.open` class (which your CSS will show/hide via the media query).
+This will add a hamburger button on small screens that toggles the navigation's `.open` class (which your CSS will show/hide via the media query).
 
 <!-- End of prompts/3-nav.md -->

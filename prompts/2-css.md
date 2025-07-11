@@ -10,7 +10,7 @@ Modified: 2025-07-11
 Use this prompt with OpenAI Codex to generate a professional, responsive CSS stylesheet for Gabriel Smith’s website. Copy the entire block below (including the numbered section comments) into your Codex call.
 
 Generate a CSS file at css/style.css that implements the following:
-
+```css
 /* 1. Reset & Base Styles */
 *,
 *::before,
@@ -109,14 +109,15 @@ nav ul.open {
  display: flex;
 }
 .menu-toggle {
- display: block;
- background: none;
- border: none;
- color: #fff;
- font-size: 1.25rem;
- cursor: pointer;
+  display: block;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 }
+```
 
 This stylesheet:
 - Resets margins and paddings for consistency
