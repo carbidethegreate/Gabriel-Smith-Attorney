@@ -10,6 +10,7 @@ Modified: 2025-07-11
 Use this prompt with OpenAI Codex to generate a reusable, SEO-ready HTML5 template for Gabriel Smith’s website. Copy the entire block below (including the numbered section comments) into your Codex call.
 
 Generate a base HTML5 file that includes:
+```
 
 /* 1. Document Setup */
 
