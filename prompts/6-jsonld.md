@@ -1,3 +1,8 @@
+dist/prompts/6-jsonld.md
+New
++23
+-0
+
 <!--
 File: prompts/6-jsonld.md
 Version: 1.0.0
@@ -20,4 +25,3 @@ Provide a JSON-LD `<script>` tag for Organization schema for the “Law Office o
   - `postalCode`: "36801".
 - `telephone`: "(334) 750-1729".
 - Include it as a `<script type="application/ld+json">` in the `<head>`.
-
