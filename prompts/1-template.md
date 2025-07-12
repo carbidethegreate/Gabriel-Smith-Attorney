@@ -1,76 +1,31 @@
 <!--
 File: prompts/1-template.md
 Version: 1.0.0
-Created: 2025-07-11
-Modified: 2025-07-11
+Created: 2025-07-12
+Modified: 2025-07-12
 -->
 
-# 1. Base HTML5 Template Prompt
+# 1. HTML5 Boilerplate Prompt
 
-Use this prompt with OpenAI Codex to generate a reusable, SEO-ready HTML5 template for Gabriel Smith’s website. Copy the entire block below (including the numbered section comments) into your Codex call.
+Create a basic HTML5 boilerplate for a law firm website. Include:
+- Proper doctype and `<html>` structure.
+- A `<head>` section with:
+  - UTF-8 charset meta tag.
+  - viewport meta tag set to "width=device-width, initial-scale=1.0".
+  - placeholder `<title>` tag: 'Gabriel Smith | Alabama Attorney at Law'.
+  - a linked CSS file: `<link rel="stylesheet" href="css/style.css">`.
+- A `<body>` containing:
+  - A semantic `<header>` with:
+    - `<h1>` for the site name "Gabriel Smith".
+    - A `<nav>` element with an unordered list of links:
+      - Home (`index.html`)
+      - About (`about.html`)
+      - Practice Areas (dropdown submenu linking to `criminal-defense.html`, `personal-injury.html`, `civil-litigation.html`, `estate-planning.html`, `cryptocurrency-recovery.html`)
+      - Contact (`contact.html`)
+  - A `<main>` element containing an HTML comment `<!-- Main content will go here -->`.
+  - A `<footer>` with:
+    - A copyright line (`&copy; YEAR Law Office of Gabriel Smith`).
+    - Social links: Facebook, LinkedIn, Twitter.
+- Use only semantic HTML5 elements.
+- Do not include any page-specific content in this boilerplate.
 
-Generate a base HTML5 file that includes:
-```
-
-/* 1. Document Setup */
-
-<!DOCTYPE html>
-
-
-<html lang="en">
-
-
-/* 2. Head Section */
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>‹PAGE_TITLE›</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!-- SEO meta tags (description, keywords, Open Graph) go here -->
-</head>
-
-
-/* 3. Header & Navigation */
-
-<body>
-  <header>
-    <h1>Gabriel Smith</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Practice Areas</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-/* 4. Main Content Placeholder */
-
-  <main>
-    <!-- Main content goes here -->
-  </main>
-
-
-/* 5. Footer */
-
-  <footer>
-    <p>&copy; 2025 Law Office of Gabriel Smith. All rights reserved.</p>
-  </footer>
-
-
-/* 6. Scripts */
-
-  <script src="js/menu.js"></script>
-
-
-</body>
-</html>
-```
-
-
-Replace ‹PAGE_TITLE› with the actual title for each page. This template gives you the full structure—just fill in the head-section meta tags and the <main> content for every page.
-
-<!-- End of prompts/1-template.md -->
