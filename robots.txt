@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://gabriel-smith-alabama-attorney.com/sitemap.xml
